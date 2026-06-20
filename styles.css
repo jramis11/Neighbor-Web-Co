@@ -199,7 +199,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.45rem); }
 
 /* ---------- Hero (home) ---------- */
 .hero {
-  position: relative; display: flex; align-items: center;
+  position: relative; display: flex; align-items: flex-start;
   padding: calc(var(--header-h) + 0.5rem) 0 2rem; overflow: hidden;
 }
 .hero-bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
