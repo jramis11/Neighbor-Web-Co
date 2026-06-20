@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Neighbor Web Co. | Simple Website Packages</title>
+  <meta name="description" content="Simple, upfront website pricing for local businesses. Starter sites from $950, Growth sites from $1,850, and monthly care plans from $149/month. No hidden fees." />
+  <link rel="canonical" href="https://neighborwebco.com/pricing" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23425c50'/%3E%3Cpath d='M8 20 L8 14 L12 11 L16 14 L16 20 Z M16 20 L16 12 L20 9 L24 12 L24 20 Z' fill='none' stroke='%23faf6ef' stroke-width='1.8' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "name": "Website Packages",
+    "itemListElement": [
+      { "@type": "Offer", "name": "Starter Website", "price": "950", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Growth Website", "price": "1850", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Monthly Website Care", "price": "149", "priceCurrency": "USD" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Neighbor Web Co. home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="39" height="39" rx="11" fill="#faf6ef" stroke="#e4ddcd"/><path d="M6 19 L11.5 13 L17 19 Z" fill="#2f4a3e"/><rect x="7" y="19" width="9" height="9" fill="#2f4a3e"/><path d="M23 19 L28.5 13 L34 19 Z" fill="#2f4a3e"/><rect x="24" y="19" width="9" height="9" fill="#2f4a3e"/><path d="M13.5 15 L20 8.5 L26.5 15 Z" fill="#e8a851"/><rect x="15" y="15" width="10" height="13" fill="#e8a851"/></svg></span>
+        <span class="brand-name">Neighbor Web Co.</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a href="process.html">Process</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Free review</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="pricing.html" aria-current="page">Pricing</a>
+    <a href="process.html">Process</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Free review</a>
+    <p class="menu-contact">hello@neighborwebco.com · (555) 555-0123</p>
+  </div>
+
+  <main>
+    <section class="page-hero page-hero-center">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+      </div>
+      <div class="container">
+        <span class="eyebrow"><span class="dot"></span> Pricing</span>
+        <h1>Simple packages. <span class="accent-text">Honest prices.</span></h1>
+        <p class="lede">No hourly billing, no surprise invoices, no jargon. Pick the package that fits today — we can always grow your site later.</p>
+      </div>
+    </section>
+
+    <!-- ===================== PRICING CARDS ===================== -->
+    <section class="section" style="padding-top: 1.5rem;">
+      <div class="container">
+        <div class="pricing-grid" data-reveal-stagger>
+          <article class="pricing-card">
+            <div class="pricing-head">
+              <h3>Starter Website</h3>
+              <p class="pricing-tag">For getting online quickly with a clean, professional site.</p>
+            </div>
+            <div class="pricing-price">
+              <span class="from">starting at</span>
+              <span class="amount">$950</span>
+            </div>
+            <ul class="pricing-features">
+              <li>Up to 4 custom pages</li>
+              <li>Mobile-friendly design</li>
+              <li>Call, email, and contact buttons</li>
+              <li>Basic photo gallery</li>
+              <li>Domain connection and launch</li>
+              <li>Launch-day testing on real phones</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary block">Start with Starter</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured">
+            <div class="pricing-badge">Most popular</div>
+            <div class="pricing-head">
+              <h3>Growth Website</h3>
+              <p class="pricing-tag">For a stronger local presence that brings in leads.</p>
+            </div>
+            <div class="pricing-price">
+              <span class="from">starting at</span>
+              <span class="amount">$1,850</span>
+            </div>
+            <ul class="pricing-features">
+              <li>Up to 8 custom pages</li>
+              <li>Booking, order, or quote form</li>
+              <li>Gallery and reviews section</li>
+              <li>Google Business Profile &amp; Maps setup</li>
+              <li>Basic local SEO</li>
+              <li>Everything in Starter</li>
+            </ul>
+            <a href="contact.html" class="btn btn-amber block">Choose Growth</a>
+          </article>
+
+          <article class="pricing-card">
+            <div class="pricing-head">
+              <h3>Monthly Website Care</h3>
+              <p class="pricing-tag">Hosting, updates, and support — completely handled.</p>
+            </div>
+            <div class="pricing-price">
+              <span class="from">starting at</span>
+              <span class="amount">$149<span class="per">/month</span></span>
+            </div>
+            <ul class="pricing-features">
+              <li>Hosting, SSL &amp; uptime monitoring</li>
+              <li>Monthly site backup</li>
+              <li>Up to 30 min of content updates/month</li>
+              <li>Monthly site health check</li>
+              <li>Priority email support (1 business day)</li>
+              <li>Cancel anytime — no contracts</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary block">Add ongoing care</a>
+          </article>
+        </div>
+        <p class="form-tiny" style="margin-top: 1.6rem;" data-reveal>Not sure which fits? <a href="contact.html" style="text-decoration: underline; color: var(--green-700); font-weight: 600;">Send a few details</a> and we'll point you the right way — no pressure.</p>
+      </div>
+    </section>
+
+    <!-- ===================== COMPARE TABLE ===================== -->
+    <section class="section" style="background: var(--cream);">
+      <div class="container">
+        <div class="section-head section-head-center" data-reveal>
+          <span class="eyebrow">Side by side</span>
+          <h2>Compare the packages <span class="accent-text">at a glance</span>.</h2>
+        </div>
+        <div class="compare-wrap" data-reveal>
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col">What's included</th>
+                <th scope="col">Starter</th>
+                <th scope="col">Growth</th>
+                <th scope="col">Monthly Care</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Custom pages<small>Designed for your business, not a template</small></td>
+                <td>Up to 4</td>
+                <td>Up to 8</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Mobile-friendly design</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓ maintained</td>
+              </tr>
+              <tr>
+                <td>Call / email / contact buttons</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓</td>
+              </tr>
+              <tr>
+                <td>Booking, order, or quote form</td>
+                <td class="no">—</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓ maintained</td>
+              </tr>
+              <tr>
+                <td>Gallery &amp; reviews section</td>
+                <td class="no">Basic gallery</td>
+                <td class="yes">✓</td>
+                <td class="yes">✓ updated</td>
+              </tr>
+              <tr>
+                <td>Google Business Profile &amp; Maps</td>
+                <td class="no">—</td>
+                <td class="yes">✓</td>
+                <td class="no">—</td>
+              </tr>
+              <tr>
+                <td>Basic local SEO</td>
+                <td class="no">—</td>
+                <td class="yes">✓</td>
+                <td class="no">—</td>
+              </tr>
+              <tr>
+                <td>Hosting, SSL &amp; uptime monitoring</td>
+                <td class="no">—</td>
+                <td class="no">—</td>
+                <td class="yes">✓</td>
+              </tr>
+              <tr>
+                <td>Monthly backups &amp; health check</td>
+                <td class="no">—</td>
+                <td class="no">—</td>
+                <td class="yes">✓</td>
+              </tr>
+              <tr>
+                <td>Content updates<small>Up to 30 minutes per month</small></td>
+                <td class="no">—</td>
+                <td class="no">—</td>
+                <td class="yes">✓</td>
+              </tr>
+              <tr>
+                <td>Priority support</td>
+                <td class="no">Launch support</td>
+                <td class="no">Launch support</td>
+                <td class="yes">✓ 1 business day</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head section-head-center" data-reveal>
+          <span class="eyebrow">Questions</span>
+          <h2>Pricing questions, <span class="accent-text">answered straight</span>.</h2>
+        </div>
+
+        <div class="faq-list" data-reveal>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Are there any hidden fees?
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner"><p>No. The price we quote after our first call is the price you pay. The only ongoing cost is your domain name (usually $10–20/year) and, if you choose it, the Monthly Care plan. We'll spell out everything in writing before any work starts.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Why do prices say "starting at"?
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Most projects land right at the listed price. If you need extras — more pages, a complex menu, photography coordination — we'll quote the difference upfront before you commit. You'll never get a surprise invoice.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can I pay in installments?
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Yes. Standard terms are 50% to start and 50% at launch. If splitting it into three payments works better for your cash flow, just ask — we work with small businesses and we get it.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Do I have to buy the Monthly Care plan?
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner"><p>No. Your website is yours either way, and we'll happily hand over everything if you'd rather manage hosting yourself. Most clients choose Care because it's cheaper than the time it saves, but it's never required.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              What if I need changes after launch?
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Small fixes in the first 30 days are free — that's part of launch. After that, Care plan members send one message and we handle it. Without a plan, we bill small updates at a flat, quoted rate per request.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Do I own my website?
+              <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner"><p>100%. Your domain, your content, your site. If you ever leave, we hand over all the files and access — no hostage situations, no exit fees.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <h2>Get a real quote — free, in one business day.</h2>
+          <p>Send a few details about your business and we'll reply with a recommendation and an exact price. No calls required, no pressure.</p>
+          <div class="cta-row">
+            <a href="contact.html" class="btn btn-amber">Request my quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" aria-label="Neighbor Web Co. home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="39" height="39" rx="11" fill="#faf6ef" stroke="#e4ddcd"/><path d="M6 19 L11.5 13 L17 19 Z" fill="#2f4a3e"/><rect x="7" y="19" width="9" height="9" fill="#2f4a3e"/><path d="M23 19 L28.5 13 L34 19 Z" fill="#2f4a3e"/><rect x="24" y="19" width="9" height="9" fill="#2f4a3e"/><path d="M13.5 15 L20 8.5 L26.5 15 Z" fill="#e8a851"/><rect x="15" y="15" width="10" height="13" fill="#e8a851"/></svg></span>
+          <span class="brand-name">Neighbor Web Co.</span>
+        </a>
+        <p class="footer-desc">Clean, modern websites for local shops and home service businesses. Built in the neighborhood.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <a href="services.html">Services</a>
+        <a href="work.html">Our work</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="process.html">Process</a>
+        <a href="about.html">About us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get started</h4>
+        <a href="contact.html">Free website review</a>
+        <a href="pricing.html#faq">Pricing FAQ</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Stay in touch</h4>
+        <a href="mailto:hello@neighborwebco.com">hello@neighborwebco.com</a>
+        <a href="tel:+15555550123">(555) 555-0123</a>
+        <p class="footer-tiny">Mon–Fri, 9am–5pm</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year></span> Neighbor Web Co. Built for local businesses.</p>
+      <p>Built in the neighborhood. ✦</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
