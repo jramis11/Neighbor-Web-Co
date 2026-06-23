@@ -206,9 +206,37 @@
       if (row) row.classList.remove("invalid");
     });
 
-    msForm.addEventListener("submit", (e) => {
+    msForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (!validateStep(current)) return;
+
+      const submitBtn = msForm.querySelector("button[type=submit]");
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = "Sending…"; }
+
+      const data = Object.fromEntries(new FormData(msForm).entries());
+
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify(data),
+        });
+        const json = await res.json();
+        if (!res.ok || !json.success) throw new Error(json.message || "Submission failed");
+      } catch (err) {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = "Request my free review"; }
+        const errMsg = msForm.querySelector(".form-error-msg");
+        if (errMsg) { errMsg.hidden = false; }
+        else {
+          const p = document.createElement("p");
+          p.className = "form-error-msg";
+          p.style.cssText = "color:#c0392b;margin-top:.75rem;font-size:.9rem;";
+          p.textContent = "Something went wrong — please email us directly at hello@neighborwebco.com.";
+          msForm.querySelector(".form-step.active .form-step-nav").after(p);
+        }
+        return;
+      }
+
       msForm.querySelector(".form-steps-wrap").hidden = true;
       const stepper = document.querySelector(".stepper");
       if (stepper) stepper.hidden = true;
