@@ -206,14 +206,36 @@
       if (row) row.classList.remove("invalid");
     });
 
-    msForm.addEventListener("submit", (e) => {
+    msForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (!validateStep(current)) return;
-      msForm.querySelector(".form-steps-wrap").hidden = true;
-      const stepper = document.querySelector(".stepper");
-      if (stepper) stepper.hidden = true;
-      msForm.querySelector(".form-success").hidden = false;
-      msForm.querySelector(".form-success").scrollIntoView({ behavior: "smooth", block: "center" });
+
+      const submitBtn = msForm.querySelector('button[type="submit"]');
+      const originalHTML = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending…";
+
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(Object.fromEntries(new FormData(msForm))),
+        });
+        const json = await res.json();
+        if (json.success) {
+          msForm.querySelector(".form-steps-wrap").hidden = true;
+          const stepper = document.querySelector(".stepper");
+          if (stepper) stepper.hidden = true;
+          msForm.querySelector(".form-success").hidden = false;
+          msForm.querySelector(".form-success").scrollIntoView({ behavior: "smooth", block: "center" });
+        } else {
+          throw new Error(json.message || "Submission failed");
+        }
+      } catch {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHTML;
+        alert("Something went wrong — please try again or email us at hello@neighborwebco.com.");
+      }
     });
   }
 
