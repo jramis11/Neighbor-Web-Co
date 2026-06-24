@@ -378,6 +378,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.45rem); }
   content: ""; width: 11px; height: 6px; border-left: 2.5px solid var(--cream); border-bottom: 2.5px solid var(--cream);
   transform: rotate(-45deg) translate(0.5px, -1px);
 }
+.section-dark .checklist li { color: rgba(250, 246, 239, 0.88); }
 .section-dark .checklist .check { background: var(--amber); }
 .section-dark .checklist .check::after { border-color: var(--green-950); }
 
